@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Greeter Dapp</title>
+        <script type="application/javascript" src="https://unpkg.com/ethers/dist/ethers.min.js"></script>
+        <script type="application/json" src="build/Greeter.json"></script>
+        <script type="application/javascript" src="main.js"></script>
+    </head>
+    <body>
+        <h1 id="message">You are not connected, Please login</h1>
+        <div id="disconnected">
+            <button id="metamask">Login with MetaMask</button>
+        </div>
+        <div id="connected" hidden>
+            <p>Your address is <span id="address">...</span></p>
+            <label for="new-message">Enter a new message :</label>
+            <input type="text" name="new-message" id="new-message">
+            <button id="send">Send</button>
+        </div>
+    </body>
+</html>
