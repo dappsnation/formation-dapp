@@ -38,6 +38,13 @@ window.onload = async () => {
     metamaskElem.addEventListener('click', async () => {
         const [address] = await ethereum.enable();
         provider = new ethers.providers.Web3Provider(ethereum);
+
+        const network = await provider.getNetwork();
+        if (network.name !== 'goerli') {
+            alert('Please switch to the Goerli network in MetaMask');
+            return;
+        }
+
         let signer = provider.getSigner();
 
         init(address, signer);

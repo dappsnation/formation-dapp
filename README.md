@@ -1,6 +1,8 @@
 # 📚 Formation dApp 🔥
 > This repo contains a minimalistic dApp. The goal is to provide the basic building bloc of a dApp.
 
+⚠️ This dApp works only on the Goerli testnet !
+
 This repo conatins :
 - a `Greeter.sol` smart-contract
 - Waffle tests for the contract
