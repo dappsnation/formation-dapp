@@ -22,6 +22,9 @@ Open a terminal and type the following commands :
 
 You can now visit http://localhost:8080
 
+## 🔎Test
+- run `npm test`
+
 ## 👨🏼‍💻Author
 - Pierre-Louis DESPAIGNE
     - [github](https://github.com/pldespaigne)
