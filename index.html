@@ -10,9 +10,18 @@
         <h1 id="message">You are not connected, Please login</h1>
         <div id="disconnected">
             <button id="metamask">Login with MetaMask</button>
+            <button id="create">Create Wallet</button>
+            <button id="import-wallet">Import Wallet</button>
         </div>
+        <div id="import-container" hidden>
+            <p>Enter your mnemonic</p>
+            <textarea id="mnenomic-import"></textarea>
+            <button id="import-button">Import</button>
+        </div>
+        <p id="mnemonic-container" hidden>Mnemonic : <span id="mnemonic">insane depend gather machine mass output slow youth equip seminar across banana</span></p>
         <div id="connected" hidden>
             <p>Your address is <span id="address">...</span></p>
+            <p>Your balance is <span id="balance">0</span> ETH</p>
             <label for="new-message">Enter a new message :</label>
             <input type="text" name="new-message" id="new-message">
             <button id="send">Send</button>
